@@ -1,0 +1,1023 @@
+{
+	"id": "6b8aefd6-8a12-4714-80d1-e769cc690ab4",
+	"name": "Adjutor API Service",
+	"timestamp": "2024-06-27T21:51:00.426Z",
+	"collection_id": "14462346-2d84dca5-f50d-42c0-8add-0da0a5925a5f",
+	"folder_id": 0,
+	"environment_id": "14462346-37f8e983-132f-482d-aa4c-8a865ac8c8a1",
+	"totalPass": 69,
+	"delay": 0,
+	"persist": true,
+	"status": "finished",
+	"startedAt": "2024-06-27T21:49:51.946Z",
+	"totalFail": 3,
+	"results": [
+		{
+			"id": "33df7f87-29e0-4057-8eaa-b7b325158513",
+			"name": "Initialize BVN Consent",
+			"url": "https://adjutor.lendsqr.com/v2/verification/bvn/22182412389",
+			"time": 17491,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200": true,
+				"Response Body Validation": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response Body Validation": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				17491
+			],
+			"allTests": [
+				{
+					"Status code is 200": true,
+					"Response Body Validation": true
+				}
+			]
+		},
+		{
+			"id": "f142bb60-7246-4fc1-875d-c647cb41610f",
+			"name": "Complete Consent and get BVN Details",
+			"url": "https://adjutor.lendsqr.com/v2/verification/bvn/22182412389",
+			"time": 15320,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200": true,
+				"Response Body Validation": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response Body Validation": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				15320
+			],
+			"allTests": [
+				{
+					"Status code is 200": true,
+					"Response Body Validation": true
+				}
+			]
+		},
+		{
+			"id": "7c229c94-5326-488f-9ef8-2cb799f4225d",
+			"name": "Verify Customer Bank Account",
+			"url": "https://adjutor.lendsqr.com/v2/verification/bankaccount",
+			"time": 672,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200": true,
+				"Response Body Validation": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response Body Validation": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				672
+			],
+			"allTests": [
+				{
+					"Status code is 200": true,
+					"Response Body Validation": true
+				}
+			]
+		},
+		{
+			"id": "0613dcbd-4f1f-4e63-b81a-c74c65a56082",
+			"name": "Check Karma for Customer",
+			"url": "https://adjutor.lendsqr.com/v2/verification/karma/07011725297",
+			"time": 590,
+			"responseCode": {
+				"code": 404,
+				"name": "Not Found"
+			},
+			"tests": {
+				"Status code is 404": true,
+				"Response Body Validation": true
+			},
+			"testPassFailCounts": {
+				"Status code is 404": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response Body Validation": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				590
+			],
+			"allTests": [
+				{
+					"Status code is 404": true,
+					"Response Body Validation": true
+				}
+			]
+		},
+		{
+			"id": "deae0344-4135-46d2-9078-6aced4d64c1e",
+			"name": "Get Credit Report from CRC Credit Bureau",
+			"url": "https://adjutor.lendsqr.com/v2/creditbureaus/crc/22182412389",
+			"time": 6217,
+			"responseCode": {
+				"code": 500,
+				"name": "Internal Server Error"
+			},
+			"tests": {
+				"Status code is 400": false,
+				"Response Body Validation": true
+			},
+			"testPassFailCounts": {
+				"Status code is 400": {
+					"pass": 0,
+					"fail": 1
+				},
+				"Response Body Validation": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				6217
+			],
+			"allTests": [
+				{
+					"Status code is 400": false,
+					"Response Body Validation": true
+				}
+			]
+		},
+		{
+			"id": "a03ffc04-e020-4137-9aef-513dac695c63",
+			"name": "Get Credit Report from FirstCentral Credit Bureau",
+			"url": "https://adjutor.lendsqr.com/v2/creditbureaus/firstcentral/22182412389",
+			"time": 504,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200": true,
+				"Response Body Validation": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response Body Validation": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				504
+			],
+			"allTests": [
+				{
+					"Status code is 200": true,
+					"Response Body Validation": true
+				}
+			]
+		},
+		{
+			"id": "1221a476-359a-4699-90e5-6249c8e45f8a",
+			"name": "Get Decision Models",
+			"url": "https://adjutor.lendsqr.com/v2/decisioning/models",
+			"time": 481,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200": true,
+				"Response message is 'Successful'": true,
+				"Response status is 'success'": false
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response message is 'Successful'": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response status is 'success'": {
+					"pass": 0,
+					"fail": 1
+				}
+			},
+			"times": [
+				481
+			],
+			"allTests": [
+				{
+					"Status code is 200": true,
+					"Response message is 'Successful'": true,
+					"Response status is 'success'": false
+				}
+			]
+		},
+		{
+			"id": "e6cec469-a9ae-42f7-a213-e5ee49a42df9",
+			"name": "Get Decision Model Details",
+			"url": "https://adjutor.lendsqr.com/v2/decisioning/models/7942/settings",
+			"time": 604,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200": true,
+				"Response message is 'Successful'": true,
+				"Response status is 'success'": false
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response message is 'Successful'": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response status is 'success'": {
+					"pass": 0,
+					"fail": 1
+				}
+			},
+			"times": [
+				604
+			],
+			"allTests": [
+				{
+					"Status code is 200": true,
+					"Response message is 'Successful'": true,
+					"Response status is 'success'": false
+				}
+			]
+		},
+		{
+			"id": "357d5598-ecce-4c9a-9ffd-0f14a227595e",
+			"name": "Get User Accounts",
+			"url": "https://adjutor.lendsqr.com/v2/oraculi/sms/entities/:bvn/accounts",
+			"time": 459,
+			"responseCode": {
+				"code": 403,
+				"name": "Forbidden"
+			},
+			"tests": {},
+			"testPassFailCounts": {},
+			"times": [
+				459
+			],
+			"allTests": [
+				{}
+			]
+		},
+		{
+			"id": "d6bad316-a3d9-433e-b526-8d2362f74cc2",
+			"name": "Get User Account Transactions",
+			"url": "https://adjutor.lendsqr.com/v2/oraculi/sms/:phone_number/transactions",
+			"time": 357,
+			"responseCode": {
+				"code": 403,
+				"name": "Forbidden"
+			},
+			"tests": {},
+			"testPassFailCounts": {},
+			"times": [
+				357
+			],
+			"allTests": [
+				{}
+			]
+		},
+		{
+			"id": "311e3753-e7b0-4f42-9fba-a6e949c1fe43",
+			"name": "Initialize Payment",
+			"url": "https://adjutor.lendsqr.com/v2/payments/initialize",
+			"time": 5922,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200": true,
+				"Response message is 'Successful'": true,
+				"Data contains the reference": true,
+				"Data contains the URL": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response message is 'Successful'": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Data contains the reference": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Data contains the URL": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				5922
+			],
+			"allTests": [
+				{
+					"Status code is 200": true,
+					"Response message is 'Successful'": true,
+					"Data contains the reference": true,
+					"Data contains the URL": true
+				}
+			]
+		},
+		{
+			"id": "659404e0-ba7a-433e-9d41-40721adc11d2",
+			"name": "Query Payment",
+			"url": "https://adjutor.lendsqr.com/v2/payments/84gSR1PwhENWfDTc",
+			"time": 401,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200": true,
+				"Response message is 'Successful'": true,
+				"Response status is 'success'": true,
+				"Data status is 'pending'": true,
+				"Data contains the reference '84gSR1PwhENWfDTc'": true,
+				"Data contains the correct amount of 5000": true,
+				"Data contains the correct description 'Payment for beans, yam and egg'": true,
+				"Data contains the callback URL 'https://lendsqr.com'": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response message is 'Successful'": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response status is 'success'": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Data status is 'pending'": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Data contains the reference '84gSR1PwhENWfDTc'": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Data contains the correct amount of 5000": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Data contains the correct description 'Payment for beans, yam and egg'": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Data contains the callback URL 'https://lendsqr.com'": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				401
+			],
+			"allTests": [
+				{
+					"Status code is 200": true,
+					"Response message is 'Successful'": true,
+					"Response status is 'success'": true,
+					"Data status is 'pending'": true,
+					"Data contains the reference '84gSR1PwhENWfDTc'": true,
+					"Data contains the correct amount of 5000": true,
+					"Data contains the correct description 'Payment for beans, yam and egg'": true,
+					"Data contains the callback URL 'https://lendsqr.com'": true
+				}
+			]
+		},
+		{
+			"id": "658f71b8-0320-407e-9148-2da8bbd57ca8",
+			"name": "Options",
+			"url": "https://adjutor.lendsqr.com/v2/data/options",
+			"time": 586,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200": true,
+				"Response 'success' field is true": true,
+				"Data array contains objects with 'name' property": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response 'success' field is true": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Data array contains objects with 'name' property": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				586
+			],
+			"allTests": [
+				{
+					"Status code is 200": true,
+					"Response 'success' field is true": true,
+					"Data array contains objects with 'name' property": true
+				}
+			]
+		},
+		{
+			"id": "09b94bb2-e102-44f0-bd90-b8d8fb5b9b4e",
+			"name": "Users",
+			"url": "https://adjutor.lendsqr.com/v2/data/users",
+			"time": 1003,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200": true,
+				"Response 'success' field is true": true,
+				"Data array is empty": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response 'success' field is true": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Data array is empty": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				1003
+			],
+			"allTests": [
+				{
+					"Status code is 200": true,
+					"Response 'success' field is true": true,
+					"Data array is empty": true
+				}
+			]
+		},
+		{
+			"id": "2d4f7326-2ea4-4550-bdba-36212d8bff5d",
+			"name": "Get Adjutor Services Pricing",
+			"url": "https://adjutor.lendsqr.com/v2/profile/pricing",
+			"time": 1385,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200": true,
+				"Response message is 'Successful'": true,
+				"Response status is 'success'": true,
+				"Message property is present and is a string": true,
+				"Data array is empty": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response message is 'Successful'": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response status is 'success'": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Message property is present and is a string": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Data array is empty": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				1385
+			],
+			"allTests": [
+				{
+					"Status code is 200": true,
+					"Response message is 'Successful'": true,
+					"Response status is 'success'": true,
+					"Message property is present and is a string": true,
+					"Data array is empty": true
+				}
+			]
+		},
+		{
+			"id": "e6ee78c3-402a-4dae-a227-d48431cf87e0",
+			"name": "Get Wallet",
+			"url": "https://adjutor.lendsqr.com/v2/profile/wallet",
+			"time": 361,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200": true,
+				"Response message is 'Successful'": true,
+				"Message property is present and is a string": true,
+				"Response status is 'success'": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response message is 'Successful'": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Message property is present and is a string": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response status is 'success'": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				361
+			],
+			"allTests": [
+				{
+					"Status code is 200": true,
+					"Response message is 'Successful'": true,
+					"Message property is present and is a string": true,
+					"Response status is 'success'": true
+				}
+			]
+		},
+		{
+			"id": "28c165b5-6edc-4dc0-8eb4-02681a2a992c",
+			"name": "Get List of Banks",
+			"url": "https://adjutor.lendsqr.com/v2/banks",
+			"time": 519,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200": true,
+				"Response message is 'Successful'": true,
+				"Message property is present and is a string": true,
+				"Response status is 'success'": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response message is 'Successful'": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Message property is present and is a string": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response status is 'success'": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				519
+			],
+			"allTests": [
+				{
+					"Status code is 200": true,
+					"Response message is 'Successful'": true,
+					"Message property is present and is a string": true,
+					"Response status is 'success'": true
+				}
+			]
+		},
+		{
+			"id": "be8424a6-8f6b-4dbe-9eb0-7bd5acbd3619",
+			"name": "Get Status Check",
+			"url": "https://adjutor.lendsqr.com/v2/status",
+			"time": 705,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200": true,
+				"Response 'status' is true": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response 'status' is true": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				705
+			],
+			"allTests": [
+				{
+					"Status code is 200": true,
+					"Response 'status' is true": true
+				}
+			]
+		},
+		{
+			"id": "ba9f214a-e9bf-4ef6-a2d8-73378b967be5",
+			"name": "Get All Banks",
+			"url": "https://adjutor.lendsqr.com/v2/direct-debit/banks?limit=100&page=1&sort_dir=ASC",
+			"time": 1195,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200": true,
+				"Response message is 'success'": true,
+				"Response status is 'success'": true,
+				"Message property is present and is a string": true,
+				"Data object contains an array called 'data'": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response message is 'success'": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response status is 'success'": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Message property is present and is a string": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Data object contains an array called 'data'": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				1195
+			],
+			"allTests": [
+				{
+					"Status code is 200": true,
+					"Response message is 'success'": true,
+					"Response status is 'success'": true,
+					"Message property is present and is a string": true,
+					"Data object contains an array called 'data'": true
+				}
+			]
+		},
+		{
+			"id": "940e73f2-67dc-496a-aca9-97d98bd2e954",
+			"name": "Get Details of a Bank",
+			"url": "https://adjutor.lendsqr.com/v2/direct-debit/banks/1",
+			"time": 1031,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200": true,
+				"Response message is 'success'": true,
+				"Response status is 'success'": true,
+				"Message property is present and is a string": true,
+				"Data object contains the properties 'id', 'name', 'bank_code', and 'institution_code'": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response message is 'success'": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response status is 'success'": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Message property is present and is a string": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Data object contains the properties 'id', 'name', 'bank_code', and 'institution_code'": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				1031
+			],
+			"allTests": [
+				{
+					"Status code is 200": true,
+					"Response message is 'success'": true,
+					"Response status is 'success'": true,
+					"Message property is present and is a string": true,
+					"Data object contains the properties 'id', 'name', 'bank_code', and 'institution_code'": true
+				}
+			]
+		},
+		{
+			"id": "f29cde09-9588-4412-9664-34d710bc95ac",
+			"name": "Get All Mandates",
+			"url": "https://adjutor.lendsqr.com/v2/direct-debit/mandates?limit=10&page=1",
+			"time": 1420,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200": true,
+				"Response message is 'success'": true,
+				"Response status is 'success'": true,
+				"Data object contains an array called 'data'": true,
+				"First object in 'data' array has property 'id'": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response message is 'success'": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response status is 'success'": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Data object contains an array called 'data'": {
+					"pass": 1,
+					"fail": 0
+				},
+				"First object in 'data' array has property 'id'": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				1420
+			],
+			"allTests": [
+				{
+					"Status code is 200": true,
+					"Response message is 'success'": true,
+					"Response status is 'success'": true,
+					"Data object contains an array called 'data'": true,
+					"First object in 'data' array has property 'id'": true
+				}
+			]
+		},
+		{
+			"id": "b2dd6ac2-4b3e-4c98-b10d-94e496076790",
+			"name": "Get All Transactions",
+			"url": "https://adjutor.lendsqr.com/v2/direct-debit/transactions?limit=10&page=1",
+			"time": 1990,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200": true,
+				"Response message is 'success'": true,
+				"Message property is present and is a string": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response message is 'success'": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Message property is present and is a string": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				1990
+			],
+			"allTests": [
+				{
+					"Status code is 200": true,
+					"Response message is 'success'": true,
+					"Message property is present and is a string": true
+				}
+			]
+		},
+		{
+			"id": "587933bf-5bd0-4227-9463-63dad5a077ef",
+			"name": "Get Details of a Transaction",
+			"url": "https://adjutor.lendsqr.com/v2/direct-debit/transactions?reference=DD-cU26qsO05mGCSGn",
+			"time": 1169,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200": true,
+				"Response message is 'success'": true,
+				"Message property is present and is a string": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response message is 'success'": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Message property is present and is a string": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				1169
+			],
+			"allTests": [
+				{
+					"Status code is 200": true,
+					"Response message is 'success'": true,
+					"Message property is present and is a string": true
+				}
+			]
+		}
+	],
+	"count": 1,
+	"totalTime": 60382,
+	"collection": {
+		"requests": [
+			{
+				"id": "33df7f87-29e0-4057-8eaa-b7b325158513",
+				"method": "POST"
+			},
+			{
+				"id": "f142bb60-7246-4fc1-875d-c647cb41610f",
+				"method": "PUT"
+			},
+			{
+				"id": "7c229c94-5326-488f-9ef8-2cb799f4225d",
+				"method": "POST"
+			},
+			{
+				"id": "0613dcbd-4f1f-4e63-b81a-c74c65a56082",
+				"method": "GET"
+			},
+			{
+				"id": "deae0344-4135-46d2-9078-6aced4d64c1e",
+				"method": "GET"
+			},
+			{
+				"id": "a03ffc04-e020-4137-9aef-513dac695c63",
+				"method": "GET"
+			},
+			{
+				"id": "1221a476-359a-4699-90e5-6249c8e45f8a",
+				"method": "GET"
+			},
+			{
+				"id": "e6cec469-a9ae-42f7-a213-e5ee49a42df9",
+				"method": "GET"
+			},
+			{
+				"id": "357d5598-ecce-4c9a-9ffd-0f14a227595e",
+				"method": "GET"
+			},
+			{
+				"id": "d6bad316-a3d9-433e-b526-8d2362f74cc2",
+				"method": "GET"
+			},
+			{
+				"id": "311e3753-e7b0-4f42-9fba-a6e949c1fe43",
+				"method": "POST"
+			},
+			{
+				"id": "659404e0-ba7a-433e-9d41-40721adc11d2",
+				"method": "GET"
+			},
+			{
+				"id": "658f71b8-0320-407e-9148-2da8bbd57ca8",
+				"method": "GET"
+			},
+			{
+				"id": "09b94bb2-e102-44f0-bd90-b8d8fb5b9b4e",
+				"method": "GET"
+			},
+			{
+				"id": "2d4f7326-2ea4-4550-bdba-36212d8bff5d",
+				"method": "GET"
+			},
+			{
+				"id": "e6ee78c3-402a-4dae-a227-d48431cf87e0",
+				"method": "GET"
+			},
+			{
+				"id": "28c165b5-6edc-4dc0-8eb4-02681a2a992c",
+				"method": "GET"
+			},
+			{
+				"id": "be8424a6-8f6b-4dbe-9eb0-7bd5acbd3619",
+				"method": "GET"
+			},
+			{
+				"id": "ba9f214a-e9bf-4ef6-a2d8-73378b967be5",
+				"method": "GET"
+			},
+			{
+				"id": "940e73f2-67dc-496a-aca9-97d98bd2e954",
+				"method": "GET"
+			},
+			{
+				"id": "f29cde09-9588-4412-9664-34d710bc95ac",
+				"method": "GET"
+			},
+			{
+				"id": "b2dd6ac2-4b3e-4c98-b10d-94e496076790",
+				"method": "GET"
+			},
+			{
+				"id": "587933bf-5bd0-4227-9463-63dad5a077ef",
+				"method": "GET"
+			}
+		]
+	}
+}
